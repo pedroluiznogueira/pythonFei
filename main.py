@@ -1,24 +1,23 @@
-#variable = a container for a value. Behaves as the value that it contains
+# multiple assignment = allows us to assign multiple variables at the same time in one line of code
 
-#string = a series of characters
-first_name = "Bro"
-last_name = "Code"
-full_name = first_name +" "+ last_name
-print("Hello "+full_name)
-# print(type(first_name))
-
-#int = a whole integer
+name = "Bro"
 age = 21
-age += 1
-print("Your age is: "+str(age))
-# print(type(age))
+attractive = True
 
-#float = a decimal number
-height = 250.5
-print("Your height is: "+str(height)+"cm")
-# print(type(height))
+name, age, attractive = "Bro", 21, True
 
-#boolean = True or False
-human = True
-print("Are you a human: "+str(human))
-# print(type(human))
+print(name, end=" ")
+print(age, end=""+" ")
+print(attractive, end=""+" ")
+
+# Spongebob = 30
+# Patrick = 30
+# Sandy = 30
+# Squidward = 30
+
+# Spongebob = Patrick = Sandy = Squidward = 30
+
+# print(Spongebob)
+# print(Patrick)
+# print(Sandy)
+# print(Squidward)
