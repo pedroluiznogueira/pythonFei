@@ -15,8 +15,8 @@ while True:
 #         continue
 #     print(i, end="")
 
-# for i in range(1,15):
-#     if i == 13: # in the output will be missing number 13
-#         pass
-#     else:
-#         print(i)
+for i in range(1,15):
+    if i == 13: # in the output will be missing number 13
+        pass
+    else:
+        print(i)
