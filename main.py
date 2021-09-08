@@ -1,15 +1,24 @@
-import math
 
-pi = -3.14
-x = 1
-y = 2
-z = 3
+# slicing = create a substring by extracting elements from another string
+#           indexing[] or slice()
+#           [start:stop:step]
 
-print(round(pi)) #next to floor
-print(math.ceil(pi)) #next whoe integer
-print(math.floor(pi)) #round floor number
-print(abs(pi)) #absolute number
-print(pow(pi,2)) #first argument is the base, and the second is the expoent
-print(math.floor(math.sqrt(9))) #the argument is the number wich square root you want to calculate
-print(max(x,y,z)) #comparision
-print(min(x,y,z)) #comparision
+name = "Bro Code"
+
+first_name = name[:3]       # [0:3]
+last_name = name[3:]        # [4:end]
+funky_name = name[::2]      # [0:end:2]
+reversed_name = name[::-1]  # [0:end:-1]
+
+print(first_name)
+print(last_name)
+print(funky_name)
+print(reversed_name)
+
+website1 = "http://google.com"
+website2 = "http://wikipedia.com"
+
+slice = slice(7,-4) # walking backwards in the string
+
+print(website1[slice]) # call the function slice as a index to the string
+print(website2[slice]) # same
