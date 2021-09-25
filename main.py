@@ -1,22 +1,15 @@
-# Loop Control Statements = change a loops execution from its normal sequence
+# list = used to store multiple items in a single variable
 
-# break =       used to terminate the loop entirely
-# continue =    skips to the next iteration of the loop.
-# pass =        does nothing, acts as a placeholder
+food = ["apple", "zannit", "pizza","hamburger","hotdog","spaghetti","pudding"]
 
-while True:
-    name = input("Enter your name: ")
-    if name != "": # it will stay in the loop unless it is != than ""
-        break
+# food[0] = "sushi" # changing "pizza" to "sushi"
 
-# phone_number = "123-456-7890"
-# for i in phone_number:
-#     if i == "-": # skips "-"
-#         continue
-#     print(i, end="")
+food.append("ice cream") # insert something in the end of the list
+food.remove("hotdog") # delete something from the list
+food.pop(0) # remove by index
+food.insert(2,"cake") # it is like append but in the beggining, first argument index and second argument element
+food.sort() # sorts in alphabetical order
+food.clear() # clears the list
 
-for i in range(1,15):
-    if i == 13: # in the output will be missing number 13
-        pass
-    else:
-        print(i)
+for f in food:
+    print(f)
