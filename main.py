@@ -1,15 +1,27 @@
-# list = used to store multiple items in a single variable
+# Python 2D lists two dimensional list
 
-food = ["apple", "zannit", "pizza","hamburger","hotdog","spaghetti","pudding"]
+# 2D lists = a list of lists
 
-# food[0] = "sushi" # changing "pizza" to "sushi"
+drinks = ["coffee","soda","tea"]
+dinner = ["pizza","hamburger","hotdog"]
+dessert = ["cake","ice cream","banana"]
 
-food.append("ice cream") # insert something in the end of the list
-food.remove("hotdog") # delete something from the list
-food.pop(0) # remove by index
-food.insert(2,"cake") # it is like append but in the beggining, first argument index and second argument element
-food.sort() # sorts in alphabetical order
-food.clear() # clears the list
+# -- Created 3 one dimensional lists --
 
-for f in food:
-    print(f)
+food = [drinks, dinner, dessert]
+
+# Here we create tree one dimensional lists
+# but each element of the list will be a one dimensional list in the food list
+
+print(food[0][0])
+print(food[1][0])
+print(food[2][0])
+print("--------")
+print("")
+
+i = 0
+for var in drinks:
+    print(food[0][i], end="" + " ")
+    print(food[1][i], end="" + " ")
+    print(food[2][i], end="" + " ")
+    i += 1
