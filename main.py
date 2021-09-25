@@ -1,27 +1,15 @@
-# Python 2D lists two dimensional list
+# tuple =   collection which is ordered and unchangeable
+#                used to group together related data
 
-# 2D lists = a list of lists
+student = ("Bro",21,"male") # lists we use "[....]" and in tuples we use "(....)"
 
-drinks = ["coffee","soda","tea"]
-dinner = ["pizza","hamburger","hotdog"]
-dessert = ["cake","ice cream","banana"]
+print(student.count("Bro")) # go inside of the tuple student and use the function count
+                            # wich will count the number of "Bro"(s) in the tuple
+print(student.index("male")) # go inside of the tuple studente and use the function index
+                             # wich will return the index of "male" in the tuple
 
-# -- Created 3 one dimensional lists --
+for x in student:
+    print(x)
 
-food = [drinks, dinner, dessert]
-
-# Here we create tree one dimensional lists
-# but each element of the list will be a one dimensional list in the food list
-
-print(food[0][0])
-print(food[1][0])
-print(food[2][0])
-print("--------")
-print("")
-
-i = 0
-for var in drinks:
-    print(food[0][i], end="" + " ")
-    print(food[1][i], end="" + " ")
-    print(food[2][i], end="" + " ")
-    i += 1
+if "Bro" in student:
+    print("Bro is here!")
